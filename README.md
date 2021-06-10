@@ -16,3 +16,6 @@
     1. npm start
 2. Client
     1. npm run react-dev
+
+### For demo
+visit [recommend-wine](https://recommend-wine.herokuapp.com).
