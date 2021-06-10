@@ -1,6 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const morgan = require('morgan');
+const axios = require('axios');
 
 
 const app = express();
@@ -17,6 +18,25 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 
+app.get('/dish/:name', (req, res) => {
+
+  axios.get(`/food/wine/pairing?food=${req.params.name}`,
+
+    {
+      baseURL: process.env.API_URL,
+      params: { apiKey: process.env.API_KEY },
+
+    }
+  )
+    .then(data => {
+
+      res.json(data.data);
+    })
+    .catch(err => {
+      console.log(err);
+      res.sendStatus(404);
+    });
+});
 
 
 
