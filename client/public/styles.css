@@ -1,0 +1,87 @@
+.main {
+    margin: 5%;
+      padding: 5%;
+      border-style: dotted;
+    border-width: 0px;
+    border-color: rgb(233, 232, 232);
+      font-weight: 300;
+    font-size: larger;
+    text-align: center;
+  }
+  
+  
+  
+  .flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+  }
+  
+  body {
+    background-color: beige;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    margin: 5%;
+      padding: 10%;
+      border-style: solid;
+    border-width: 2px;
+    border-color: rgb(96,96,96);
+      font-weight: 500;
+    text-align: center;
+  }
+  
+  input {
+    height: 30px;
+    width: 300px;
+  }
+  button {
+    height: 35px;
+  }
+  
+  button:hover {
+    background-color: rgb(146, 235, 128);
+  }
+  
+  .starContainer {
+    width: 100px;
+  }
+  
+  #fullStar {
+    content: url('./images/5StarsFull-01.png');
+    height: 20px;
+  
+  }
+  
+  #emptyStar {
+    content: url('./images/5StarsEmpty-01.png');
+    height: 20px;
+  }
+  
+  #fullStarContainer {
+    overflow: hidden;
+    position: absolute;
+  }
+  
+  #emptyStarContainer {
+    position: absolute;
+    width: 100px;
+  
+  }
+  
+  .star {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   justify-content: center;
+  
+  }
+  
+  p {
+    text-align: center;
+  }
+  
