@@ -5,7 +5,7 @@
 2. Express
 3. React
 
-## Project setup
+## Getting stargted
 1. npm install
 2. Create .env file in the root directory and add
     1. API_KEY=your api key
